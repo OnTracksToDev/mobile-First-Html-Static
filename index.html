@@ -15,63 +15,106 @@
       html {
         scroll-behavior: smooth;
       }
-      main, section{
+      main,
+      section {
         margin-top: 150px;
       }
-      section{
+      section {
         scroll-margin-top: 50px;
       }
     </style>
   </head>
   <body>
+    <!-- HEADER START -->
     <header class="w3-top w3-white">
       <nav id="desktopNav" class="w3-bar">
-        <a href="javascript:void(0)" onclick="toggleNavbar()" class="w3-bar-item w3-hide-large w3-hide-medium w3-right">
+        <a
+          href="javascript:void(0)"
+          onclick="toggleNavbar()"
+          class="w3-bar-item w3-hide-large w3-hide-medium w3-right"
+        >
           <i class="fa fa-bars"></i>
         </a>
         <a href="#home" class="w3-bar-item w3-button">Home</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-        <a href="#portfolio" class="w3-bar-item w3-button  w3-hide-small">Portfolio</a>
-        <a href="#contact" class="w3-bar-item w3-button  w3-hide-small">Contact</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+          >Portfolio</a
+        >
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          >Contact</a
+        >
       </nav>
 
       <nav
         id="mobileNav"
-        class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
-        <a href="#about" onclick="toggleNavbar()" class="w3-bar-item w3-button">About</a>
-        <a href="#portfolio" onclick="toggleNavbar()" class="w3-bar-item w3-button">Portfolio</a>
-        <a href="#contact" onclick="toggleNavbar()" class="w3-bar-item w3-button">Contact</a>
+        class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide"
+      >
+        <a href="#about" onclick="toggleNavbar()" class="w3-bar-item w3-button"
+          >About</a
+        >
+        <a
+          href="#portfolio"
+          onclick="toggleNavbar()"
+          class="w3-bar-item w3-button"
+          >Portfolio</a
+        >
+        <a
+          href="#contact"
+          onclick="toggleNavbar()"
+          class="w3-bar-item w3-button"
+          >Contact</a
+        >
       </nav>
     </header>
-    <main>
-    <section id="home"></section>
+    <!-- HEADER END -->
+    <!-- MAIN START -->
+    <main class="w3-container">
+      <!-- HOME SECTION START -->
+      <section id="home"></section>
+      <!-- HOME SECTION END -->
+      <!-- ABOUT SECTION START -->
       <section id="about">
         <h2>About</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          perferendis dolor illo perspiciatis, rerum ducimus rem voluptatibus
-          nostrum excepturi cum nemo beatae tempora, vero ratione quibusdam
-          commodi, provident maxime. Ipsa iure sunt corrupti ab illum enim sed
-          minima. Nostrum, incidunt illum quo quaerat, ad accusamus beatae
-          voluptatem corporis deleniti, necessitatibus nobis nam. Unde autem
-          tempore, ab expedita voluptatibus quisquam debitis deserunt eveniet
-          in, maxime animi? Provident rerum sapiente minus doloremque, cum sed
-          quo dolorem, amet vitae ad non saepe. Nam, molestiae quasi iure totam
-          minus odio architecto, temporibus nisi nesciunt fugit quas! Non,
-          libero ipsam vitae nobis corrupti, molestias ea distinctio repellat
-          labore maiores sequi incidunt suscipit doloribus, quia hic eum.
-          Officiis, alias in. Dicta, est ipsam consectetur amet cumque placeat
-          exercitationem minus nemo quo animi laudantium illo blanditiis harum
-          maxime? Quia quidem asperiores cupiditate accusamus quibusdam dicta
-          delectus saepe maiores odio voluptatum maxime recusandae officiis
-          atque soluta aut, nobis magnam inventore nisi, culpa natus blanditiis!
-          Totam, cumque earum obcaecati et vel odit atque est officia molestiae
-          animi adipisci maxime ad! Impedit hic ratione eos earum molestias,
-          distinctio deserunt minima consectetur minus tenetur, molestiae culpa
-          dolore officiis reprehenderit exercitationem reiciendis quos nam
-          facilis fuga quas. Asperiores sequi illum non iste!
-        </p>
+        <div class="w3-row">
+          <div class="w3-half">
+            <img
+              src="assets/images/paris-4793193_1280.jpg"
+              alt="parisByNight"
+              class="w3-image w3-padding w3-card"
+            />
+          </div>
+          <div class="w3-half w3-padding">
+            <p >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit perferendis dolor illo perspiciatis, rerum ducimus
+              rem voluptatibus nostrum excepturi cum nemo beatae tempora, vero
+              ratione quibusdam commodi, provident maxime. Ipsa iure sunt
+              corrupti ab illum enim sed minima. Nostrum, incidunt illum quo
+              quaerat, ad accusamus beatae voluptatem corporis deleniti,
+              necessitatibus nobis nam. Unde autem tempore, ab expedita
+              voluptatibus quisquam debitis deserunt eveniet in, maxime animi?
+              Provident rerum sapiente minus doloremque, cum sed quo dolorem,
+              amet vitae ad non saepe. Nam, molestiae quasi iure totam minus
+              odio architecto, temporibus nisi nesciunt fugit quas! Non, libero
+              ipsam vitae nobis corrupti, molestias ea distinctio repellat
+              labore maiores sequi incidunt suscipit doloribus, quia hic eum.
+              Officiis, alias in. Dicta, est ipsam consectetur amet cumque
+              placeat exercitationem minus nemo quo animi laudantium illo
+              blanditiis harum maxime? Quia quidem asperiores cupiditate
+              accusamus quibusdam dicta delectus saepe maiores odio voluptatum
+              maxime recusandae officiis atque soluta aut, nobis magnam
+              inventore nisi, culpa natus blanditiis! Totam, cumque earum
+              obcaecati et vel odit atque est officia molestiae animi adipisci
+              maxime ad! Impedit hic ratione eos earum molestias, distinctio
+              deserunt minima consectetur minus tenetur, molestiae culpa dolore
+              officiis reprehenderit exercitationem reiciendis quos nam facilis
+              fuga quas. Asperiores sequi illum non iste!
+            </p>
+          </div>
+        </div>
       </section>
+      <!-- ABOUT SECTION END -->
+      <!-- PORTFOLIO SECTION START -->
       <section id="portfolio">
         <h2>Portfolio</h2>
         <article></article>
@@ -102,6 +145,8 @@
           explicabo ipsa reiciendis. Id, maiores?
         </p>
       </section>
+      <!-- PORTFOLIO SECTION END -->
+      <!-- CONTACT SECTION START -->
       <section id="contact">
         <h2>Contact</h2>
         <p>
@@ -131,14 +176,18 @@
           corporis.
         </p>
       </section>
+      <!-- ABOUT SECTION END -->
     </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
     <footer></footer>
+    <!-- FOOTER END -->
     <script>
-        function toggleNavbar(){
-            let nav =document.getElementById("mobileNav");
-            nav.classList.toggle("w3-show");
-            // console.log(nav.classList);
-        }
+      function toggleNavbar() {
+        let nav = document.getElementById("mobileNav");
+        nav.classList.toggle("w3-show");
+        // console.log(nav.classList);
+      }
     </script>
   </body>
 </html>
