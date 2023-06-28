@@ -10,23 +10,135 @@
       content="One page website using simple css class for mobile optimisation..."
     />
     <link rel="stylesheet" href="assets/css/w3css.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      main, section{
+        margin-top: 150px;
+      }
+      section{
+        scroll-margin-top: 50px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav></i></nav>
+    <header class="w3-top w3-white">
+      <nav id="desktopNav" class="w3-bar">
+        <a href="javascript:void(0)" onclick="toggleNavbar()" class="w3-bar-item w3-hide-large w3-hide-medium w3-right">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+        <a href="#portfolio" class="w3-bar-item w3-button  w3-hide-small">Portfolio</a>
+        <a href="#contact" class="w3-bar-item w3-button  w3-hide-small">Contact</a>
+      </nav>
+
+      <nav
+        id="mobileNav"
+        class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
+        <a href="#about" onclick="toggleNavbar()" class="w3-bar-item w3-button">About</a>
+        <a href="#portfolio" onclick="toggleNavbar()" class="w3-bar-item w3-button">Portfolio</a>
+        <a href="#contact" onclick="toggleNavbar()" class="w3-bar-item w3-button">Contact</a>
+      </nav>
     </header>
     <main>
-      <section></section>
-      <section>
-        <article></article>
-        <article></article>
-        <article></article>
+    <section id="home"></section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          perferendis dolor illo perspiciatis, rerum ducimus rem voluptatibus
+          nostrum excepturi cum nemo beatae tempora, vero ratione quibusdam
+          commodi, provident maxime. Ipsa iure sunt corrupti ab illum enim sed
+          minima. Nostrum, incidunt illum quo quaerat, ad accusamus beatae
+          voluptatem corporis deleniti, necessitatibus nobis nam. Unde autem
+          tempore, ab expedita voluptatibus quisquam debitis deserunt eveniet
+          in, maxime animi? Provident rerum sapiente minus doloremque, cum sed
+          quo dolorem, amet vitae ad non saepe. Nam, molestiae quasi iure totam
+          minus odio architecto, temporibus nisi nesciunt fugit quas! Non,
+          libero ipsam vitae nobis corrupti, molestias ea distinctio repellat
+          labore maiores sequi incidunt suscipit doloribus, quia hic eum.
+          Officiis, alias in. Dicta, est ipsam consectetur amet cumque placeat
+          exercitationem minus nemo quo animi laudantium illo blanditiis harum
+          maxime? Quia quidem asperiores cupiditate accusamus quibusdam dicta
+          delectus saepe maiores odio voluptatum maxime recusandae officiis
+          atque soluta aut, nobis magnam inventore nisi, culpa natus blanditiis!
+          Totam, cumque earum obcaecati et vel odit atque est officia molestiae
+          animi adipisci maxime ad! Impedit hic ratione eos earum molestias,
+          distinctio deserunt minima consectetur minus tenetur, molestiae culpa
+          dolore officiis reprehenderit exercitationem reiciendis quos nam
+          facilis fuga quas. Asperiores sequi illum non iste!
+        </p>
       </section>
-      <section></section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <article></article>
+        <article></article>
+        <article></article>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ipsum,
+          fuga harum rerum aut accusamus praesentium. Accusamus, fugiat
+          doloribus veniam nostrum mollitia atque exercitationem illo
+          voluptatibus aperiam dignissimos quas tenetur consectetur deserunt
+          voluptatum quod minus officiis neque itaque culpa sit! Atque commodi
+          quam sit ad, reprehenderit mollitia minima veritatis quisquam ullam
+          nulla harum voluptates reiciendis dolore facere labore praesentium
+          voluptatum nemo sed ipsa aspernatur, blanditiis quae. Officia adipisci
+          suscipit voluptates, fuga minima quibusdam deserunt accusamus, aperiam
+          error beatae culpa provident eum ipsa iste dolore quae officiis unde
+          soluta. Atque praesentium sequi ab eligendi hic a. Similique dolorum
+          nam debitis accusamus beatae, veritatis minima, quas animi ipsum iure
+          consequatur aut id reiciendis molestias sed. Illum laborum corrupti
+          tempora, iste quo error cumque veniam ea. Nobis atque, magni ex
+          architecto voluptas sapiente quidem in reprehenderit quaerat iste
+          commodi dicta fugit beatae recusandae odit id labore animi temporibus
+          sit vitae dignissimos omnis delectus? Ab sed obcaecati nesciunt atque,
+          at in magni eaque mollitia! Quidem natus id, est dolores quas
+          accusantium tempora iste fugiat dignissimos optio ex veniam nesciunt.
+          Architecto aut veniam rem voluptates atque, nisi aspernatur eveniet in
+          recusandae quam soluta iusto illo deleniti assumenda iure tempora, et
+          explicabo ipsa reiciendis. Id, maiores?
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+          repudiandae nostrum perspiciatis dolores laudantium architecto amet
+          voluptatibus blanditiis assumenda. Sint quidem porro autem facilis at
+          illum, similique assumenda nam laboriosam molestias, nihil sunt,
+          officiis explicabo. Doloremque architecto cum eligendi ullam velit est
+          perferendis iure dolores, saepe ea maxime eum quibusdam nihil iusto.
+          Neque culpa libero aut nam optio nobis esse eveniet odit. Neque
+          doloremque eos rerum animi facere deserunt natus ut sit assumenda.
+          Placeat similique cum, harum distinctio officiis exercitationem a
+          repudiandae? Nam quasi perspiciatis assumenda quisquam alias
+          reiciendis eos, asperiores dignissimos. Maxime obcaecati placeat eius?
+          Debitis laboriosam non alias omnis aperiam necessitatibus. Assumenda
+          molestiae corporis doloribus quos. Nobis, non libero quisquam quaerat
+          veritatis, exercitationem nemo suscipit, quia recusandae sed aliquid
+          laudantium dignissimos. Provident cum in consequuntur itaque,
+          voluptates excepturi. Voluptate quo officia consectetur quisquam
+          possimus enim recusandae facere. Iste libero quae ipsum quod vitae,
+          eos aspernatur voluptatem rem a eligendi, ducimus minus deleniti ex
+          corporis. Possimus officia autem, eos recusandae nulla ab dolore,
+          accusantium obcaecati sed nisi sit harum cum fuga eveniet minima
+          dolor, quibusdam consequuntur beatae alias qui natus mollitia.
+          Corrupti quia aspernatur blanditiis. Laboriosam voluptate a voluptates
+          numquam ab doloremque tempora aspernatur optio velit id? Nostrum,
+          corporis.
+        </p>
+      </section>
     </main>
     <footer></footer>
+    <script>
+        function toggleNavbar(){
+            let nav =document.getElementById("mobileNav");
+            nav.classList.toggle("w3-show");
+            // console.log(nav.classList);
+        }
+    </script>
   </body>
 </html>
-
-
