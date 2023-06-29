@@ -9,6 +9,7 @@
       name="description"
       content="One page website using simple css class for mobile optimisation..."
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/w3css.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <style>
@@ -27,7 +28,7 @@
   <body>
     <!-- HEADER START -->
     <header class="w3-top w3-white">
-      <nav id="desktopNav" class="w3-bar">
+      <nav id="desktopNav" class="w3-bar w3-border-bottom">
         <a
           href="javascript:void(0)"
           onclick="toggleNavbar()"
@@ -35,7 +36,9 @@
         >
           <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button"
+          >Home</a
+        >
         <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
         <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
           >Portfolio</a
@@ -76,15 +79,16 @@
       <section id="about">
         <h2>About</h2>
         <div class="w3-row">
-          <div class="w3-half">
+          <div class="w3-half w3-card w3-center">
+            <h3>PARIS BY NIGHT</h3>
             <img
-              src="assets/images/paris-4793193_1280.jpg"
+              src="assets/images/paris.jpg"
               alt="parisByNight"
-              class="w3-image w3-padding w3-card"
+              class="w3-image w3-padding "
             />
           </div>
           <div class="w3-half w3-padding">
-            <p >
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit perferendis dolor illo perspiciatis, rerum ducimus
               rem voluptatibus nostrum excepturi cum nemo beatae tempora, vero
@@ -117,9 +121,38 @@
       <!-- PORTFOLIO SECTION START -->
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <article></article>
-        <article></article>
-        <article></article>
+        <div class="w3-row-padding">
+          <article class="w3-col m4 w3-center">
+            <div class="w3-card">
+            <h3>L'Arc de Triomphe</h3>
+            <img
+              src="assets/images/arc-de-triomph.jpg"
+              alt="arc de triomphe"
+              class="w3-image w3-padding "
+            />
+          </div>
+          </article>
+          <article class="w3-col m4 w3-center">
+            <div class="w3-card">
+            <h3>La Tour Eiffel</h3>
+            <img
+              src="assets/images/architecture.jpg"
+              alt="tour eiffel"
+              class="w3-image w3-padding"
+            />
+          </div>
+          </article>
+          <article class="w3-col m4 w3-center">
+            <div class="w3-card">
+            <h3>Le musée du Louvre</h3>
+            <img
+              src="assets/images/louvre.jpg"
+              alt="louvre"
+              class="w3-image w3-padding"
+            />
+          </div>
+          </article>
+        </div>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ipsum,
           fuga harum rerum aut accusamus praesentium. Accusamus, fugiat
@@ -187,6 +220,13 @@
         let nav = document.getElementById("mobileNav");
         nav.classList.toggle("w3-show");
         // console.log(nav.classList);
+      }
+
+      function homeHideNavbar() {
+        let nav = document.getElementById("mobileNav");
+        if (nav.classList.contains("w3-show")) {
+          nav.classList.remove("w3-show");
+        }
       }
     </script>
   </body>
