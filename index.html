@@ -12,16 +12,57 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/w3css.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <style>
       html {
         scroll-behavior: smooth;
       }
       main,
       section {
-        margin-top: 150px;
+        margin-top: 20px;
       }
       section {
         scroll-margin-top: 50px;
+      }
+      #home {
+        height: 350px;
+        background-image: url(assets/images/paris-ville.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      section,
+      h2 {
+        text-align: center;
+      }
+      .portfolio {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(assets/images/street-art.jpg);
+        height: 350px;
+      }
+      .contact {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(assets/images/tag.jpg);
+        height: 350px;
+      }
+      h1,
+      h2 {
+        font-family: "Anton", sans-serif;
+      }
+      #btnToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
       }
     </style>
   </head>
@@ -70,13 +111,22 @@
       </nav>
     </header>
     <!-- HEADER END -->
+    <!-- HOME SECTION START -->
+    <section id="home" class="w3-display-container w3-border-bottom">
+      <h1
+        class="w3-display-middle w3-pale-yellow w3-center w3-padding w3-round-medium"
+      >
+        MY MOBILE SITE
+      </h1>
+    </section>
+    <button id="btnToTop" class="w3-hide w3-black w3-animate-opacity">
+      <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
+    </button>
+    <!-- HOME SECTION END -->
     <!-- MAIN START -->
-    <main class="w3-container">
-      <!-- HOME SECTION START -->
-      <section id="home"></section>
-      <!-- HOME SECTION END -->
+    <main>
       <!-- ABOUT SECTION START -->
-      <section id="about">
+      <section id="about" class="w3-container w3-margin-bottom">
         <h2>About</h2>
         <div class="w3-row">
           <div class="w3-half w3-card w3-center">
@@ -84,7 +134,7 @@
             <img
               src="assets/images/paris.jpg"
               alt="parisByNight"
-              class="w3-image w3-padding "
+              class="w3-image w3-padding"
             />
           </div>
           <div class="w3-half w3-padding">
@@ -120,95 +170,117 @@
       <!-- ABOUT SECTION END -->
       <!-- PORTFOLIO SECTION START -->
       <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="w3-row-padding">
-          <article class="w3-col m4 w3-center">
-            <div class="w3-card">
-            <h3>L'Arc de Triomphe</h3>
-            <img
-              src="assets/images/arc-de-triomph.jpg"
-              alt="arc de triomphe"
-              class="w3-image w3-padding "
-            />
-          </div>
-          </article>
-          <article class="w3-col m4 w3-center">
-            <div class="w3-card">
-            <h3>La Tour Eiffel</h3>
-            <img
-              src="assets/images/architecture.jpg"
-              alt="tour eiffel"
-              class="w3-image w3-padding"
-            />
-          </div>
-          </article>
-          <article class="w3-col m4 w3-center">
-            <div class="w3-card">
-            <h3>Le musée du Louvre</h3>
-            <img
-              src="assets/images/louvre.jpg"
-              alt="louvre"
-              class="w3-image w3-padding"
-            />
-          </div>
-          </article>
+        <div
+          class="portfolio w3-display-container w3-border-bottom w3-border-top w3-margin-top"
+        >
+          <h2
+            style="font-size: 70px"
+            class="w3-display-middle w3-center w3-padding w3-blue-grey w3-round-medium"
+          >
+            Portfolio
+          </h2>
         </div>
-        <p>
-          hello world
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ipsum,
-          fuga harum rerum aut accusamus praesentium. Accusamus, fugiat
-          doloribus veniam nostrum mollitia atque exercitationem illo
-          voluptatibus aperiam dignissimos quas tenetur consectetur deserunt
-          voluptatum quod minus officiis neque itaque culpa sit! Atque commodi
-          quam sit ad, reprehenderit mollitia minima veritatis quisquam ullam
-          nulla harum voluptates reiciendis dolore facere labore praesentium
-          voluptatum nemo sed ipsa aspernatur, blanditiis quae. Officia adipisci
-          suscipit voluptates, fuga minima quibusdam deserunt accusamus, aperiam
-          error beatae culpa provident eum ipsa iste dolore quae officiis unde
-          soluta. Atque praesentium sequi ab eligendi hic a. Similique dolorum
-          nam debitis accusamus beatae, veritatis minima, quas animi ipsum iure
-          consequatur aut id reiciendis molestias sed. Illum laborum corrupti
-          tempora, iste quo error cumque veniam ea. Nobis atque, magni ex
-          architecto voluptas sapiente quidem in reprehenderit quaerat iste
-          commodi dicta fugit beatae recusandae odit id labore animi temporibus
-          sit vitae dignissimos omnis delectus? Ab sed obcaecati nesciunt atque,
-          at in magni eaque mollitia! Quidem natus id, est dolores quas
-          accusantium tempora iste fugiat dignissimos optio ex veniam nesciunt.
-          Architecto aut veniam rem voluptates atque, nisi aspernatur eveniet in
-          recusandae quam soluta iusto illo deleniti assumenda iure tempora, et
-          explicabo ipsa reiciendis. Id, maiores?
-        </p>
+        <div class="w3-container w3-margin-top">
+          <div class="w3-row-padding">
+            <article class="w3-col m4 w3-center">
+              <div class="w3-card">
+                <h3>L'Arc de Triomphe</h3>
+                <img
+                  src="assets/images/arc-de-triomph.jpg"
+                  alt="arc de triomphe"
+                  class="w3-image w3-padding"
+                />
+              </div>
+            </article>
+            <article class="w3-col m4 w3-center">
+              <div class="w3-card">
+                <h3>La Tour Eiffel</h3>
+                <img
+                  src="assets/images/architecture.jpg"
+                  alt="tour eiffel"
+                  class="w3-image w3-padding"
+                />
+              </div>
+            </article>
+            <article class="w3-col m4 w3-center">
+              <div class="w3-card">
+                <h3>Le musée du Louvre</h3>
+                <img
+                  src="assets/images/louvre.jpg"
+                  alt="louvre"
+                  class="w3-image w3-padding"
+                />
+              </div>
+            </article>
+          </div>
+          <p class="w3-margin-top">
+            hello world Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Unde ipsum, fuga harum rerum aut accusamus praesentium.
+            Accusamus, fugiat doloribus veniam nostrum mollitia atque
+            exercitationem illo voluptatibus aperiam dignissimos quas tenetur
+            consectetur deserunt voluptatum quod minus officiis neque itaque
+            culpa sit! Atque commodi quam sit ad, reprehenderit mollitia minima
+            veritatis quisquam ullam nulla harum voluptates reiciendis dolore
+            facere labore praesentium voluptatum nemo sed ipsa aspernatur,
+            blanditiis quae. Officia adipisci suscipit voluptates, fuga minima
+            quibusdam deserunt accusamus, aperiam error beatae culpa provident
+            eum ipsa iste dolore quae officiis unde soluta. Atque praesentium
+            sequi ab eligendi hic a. Similique dolorum nam debitis accusamus
+            beatae, veritatis minima, quas animi ipsum iure consequatur aut id
+            reiciendis molestias sed. Illum laborum corrupti tempora, iste quo
+            error cumque veniam ea. Nobis atque, magni ex architecto voluptas
+            sapiente quidem in reprehenderit quaerat iste commodi dicta fugit
+            beatae recusandae odit id labore animi temporibus sit vitae
+            dignissimos omnis delectus? Ab sed obcaecati nesciunt atque, at in
+            magni eaque mollitia! Quidem natus id, est dolores quas accusantium
+            tempora iste fugiat dignissimos optio ex veniam nesciunt. Architecto
+            aut veniam rem voluptates atque, nisi aspernatur eveniet in
+            recusandae quam soluta iusto illo deleniti assumenda iure tempora,
+            et explicabo ipsa reiciendis. Id, maiores?
+          </p>
+        </div>
       </section>
       <!-- PORTFOLIO SECTION END -->
       <!-- CONTACT SECTION START -->
       <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-          repudiandae nostrum perspiciatis dolores laudantium architecto amet
-          voluptatibus blanditiis assumenda. Sint quidem porro autem facilis at
-          illum, similique assumenda nam laboriosam molestias, nihil sunt,
-          officiis explicabo. Doloremque architecto cum eligendi ullam velit est
-          perferendis iure dolores, saepe ea maxime eum quibusdam nihil iusto.
-          Neque culpa libero aut nam optio nobis esse eveniet odit. Neque
-          doloremque eos rerum animi facere deserunt natus ut sit assumenda.
-          Placeat similique cum, harum distinctio officiis exercitationem a
-          repudiandae? Nam quasi perspiciatis assumenda quisquam alias
-          reiciendis eos, asperiores dignissimos. Maxime obcaecati placeat eius?
-          Debitis laboriosam non alias omnis aperiam necessitatibus. Assumenda
-          molestiae corporis doloribus quos. Nobis, non libero quisquam quaerat
-          veritatis, exercitationem nemo suscipit, quia recusandae sed aliquid
-          laudantium dignissimos. Provident cum in consequuntur itaque,
-          voluptates excepturi. Voluptate quo officia consectetur quisquam
-          possimus enim recusandae facere. Iste libero quae ipsum quod vitae,
-          eos aspernatur voluptatem rem a eligendi, ducimus minus deleniti ex
-          corporis. Possimus officia autem, eos recusandae nulla ab dolore,
-          accusantium obcaecati sed nisi sit harum cum fuga eveniet minima
-          dolor, quibusdam consequuntur beatae alias qui natus mollitia.
-          Corrupti quia aspernatur blanditiis. Laboriosam voluptate a voluptates
-          numquam ab doloremque tempora aspernatur optio velit id? Nostrum,
-          corporis.
-        </p>
+        <div
+          class="contact w3-display-container w3-border-bottom w3-border-top"
+        >
+          <h2
+            style="font-size: 70px"
+            class="w3-display-middle w3-center w3-padding w3-blue-grey w3-round-medium"
+          >
+            Contact
+          </h2>
+        </div>
+        <div class="w3-container w3-margin-top">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            repudiandae nostrum perspiciatis dolores laudantium architecto amet
+            voluptatibus blanditiis assumenda. Sint quidem porro autem facilis
+            at illum, similique assumenda nam laboriosam molestias, nihil sunt,
+            officiis explicabo. Doloremque architecto cum eligendi ullam velit
+            est perferendis iure dolores, saepe ea maxime eum quibusdam nihil
+            iusto. Neque culpa libero aut nam optio nobis esse eveniet odit.
+            Neque doloremque eos rerum animi facere deserunt natus ut sit
+            assumenda. Placeat similique cum, harum distinctio officiis
+            exercitationem a repudiandae? Nam quasi perspiciatis assumenda
+            quisquam alias reiciendis eos, asperiores dignissimos. Maxime
+            obcaecati placeat eius? Debitis laboriosam non alias omnis aperiam
+            necessitatibus. Assumenda molestiae corporis doloribus quos. Nobis,
+            non libero quisquam quaerat veritatis, exercitationem nemo suscipit,
+            quia recusandae sed aliquid laudantium dignissimos. Provident cum in
+            consequuntur itaque, voluptates excepturi. Voluptate quo officia
+            consectetur quisquam possimus enim recusandae facere. Iste libero
+            quae ipsum quod vitae, eos aspernatur voluptatem rem a eligendi,
+            ducimus minus deleniti ex corporis. Possimus officia autem, eos
+            recusandae nulla ab dolore, accusantium obcaecati sed nisi sit harum
+            cum fuga eveniet minima dolor, quibusdam consequuntur beatae alias
+            qui natus mollitia. Corrupti quia aspernatur blanditiis. Laboriosam
+            voluptate a voluptates numquam ab doloremque tempora aspernatur
+            optio velit id? Nostrum, corporis.
+          </p>
+        </div>
       </section>
       <!-- ABOUT SECTION END -->
     </main>
@@ -229,6 +301,22 @@
           nav.classList.remove("w3-show");
         }
       }
+
+      function displayScrollToTopBtn() {
+        let btn = document.getElementById("btnToTop");
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          btn.classList.add("w3-show");
+        } else {
+          btn.classList.remove("w3-show");
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        displayScrollToTopBtn();
+      });
     </script>
   </body>
 </html>
