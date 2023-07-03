@@ -9,14 +9,24 @@
       name="description"
       content="One page website using simple css class for mobile optimisation..."
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/w3css.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/effeiltower.svg"
+      type="image/x-icon"
     />
     <style>
       html {
@@ -33,7 +43,7 @@
         height: 350px;
         background-image: url(assets/images/paris-ville.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
@@ -42,20 +52,25 @@
         text-align: center;
       }
       .portfolio {
+        background-position: center center;
+
+        background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(assets/images/street-art.jpg);
         height: 350px;
       }
       .contact {
-        background-position: center;
+        background-attachment: fixed;
+        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(assets/images/tag.jpg);
         height: 350px;
       }
       h1,
-      h2 {
+      h2,
+      h3 {
         font-family: "Anton", sans-serif;
       }
       #btnToTop {
@@ -63,6 +78,23 @@
         bottom: 20px;
         right: 20px;
         z-index: 3;
+      }
+      body {
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family: "Roboto", sans-serif;
+      }
+      @font-face {
+        font-family: "WorldDiscovery";
+        src: url(assets/fonts/WorldDiscovery_PERSONAL_USE_ONLY.otf);
+      }
+      h1 {
+        font-family: "WorldDiscovery";
+        font-size: 70px;
+        text-shadow: 3px 3px 0 #444;
+      }
+      h2 {
+        font-size: 50px;
+        text-shadow: 3px 3px 5px #444;
       }
     </style>
   </head>
@@ -78,20 +110,24 @@
           <i class="fa fa-bars"></i>
         </a>
         <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button"
-          >Home</a
+          ><img src="assets/images/effeiltower.svg" alt="" style="width: 30px"
+        /></a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-xlarge"
+          >About</a
         >
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button w3-hide-small w3-xlarge"
           >Portfolio</a
         >
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-xlarge"
           >Contact</a
         >
       </nav>
 
       <nav
         id="mobileNav"
-        class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide"
+        class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide w3-animate-right"
       >
         <a href="#about" onclick="toggleNavbar()" class="w3-bar-item w3-button"
           >About</a
@@ -114,9 +150,9 @@
     <!-- HOME SECTION START -->
     <section id="home" class="w3-display-container w3-border-bottom">
       <h1
-        class="w3-display-middle w3-pale-yellow w3-center w3-padding w3-round-medium"
+        class="w3-display-middle w3-text-white w3-center w3-padding w3-round-medium"
       >
-        MY MOBILE SITE
+        My Mobile Website
       </h1>
     </section>
     <button id="btnToTop" class="w3-hide w3-black w3-animate-opacity">
@@ -126,10 +162,10 @@
     <!-- MAIN START -->
     <main>
       <!-- ABOUT SECTION START -->
-      <section id="about" class="w3-container w3-margin-bottom">
+      <section id="about" class="w3-container w3-section">
         <h2>About</h2>
         <div class="w3-row">
-          <div class="w3-half w3-card w3-center">
+          <div class="w3-half w3-card w3-center w3-round-xlarge">
             <h3>PARIS BY NIGHT</h3>
             <img
               src="assets/images/paris.jpg"
@@ -174,8 +210,7 @@
           class="portfolio w3-display-container w3-border-bottom w3-border-top w3-margin-top"
         >
           <h2
-            style="font-size: 70px"
-            class="w3-display-middle w3-center w3-padding w3-blue-grey w3-round-medium"
+            class="w3-display-middle w3-center w3-padding w3-text-white w3-round-medium"
           >
             Portfolio
           </h2>
@@ -183,33 +218,48 @@
         <div class="w3-container w3-margin-top">
           <div class="w3-row-padding">
             <article class="w3-col m4 w3-center">
-              <div class="w3-card">
+              <div class="w3-card" data-aos="flip-left">
                 <h3>L'Arc de Triomphe</h3>
                 <img
                   src="assets/images/arc-de-triomph.jpg"
                   alt="arc de triomphe"
                   class="w3-image w3-padding"
                 />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nihil harum odit voluptatum beatae voluptates ratione sunt
+                  eveniet incidunt rem sapiente.
+                </p>
               </div>
             </article>
             <article class="w3-col m4 w3-center">
-              <div class="w3-card">
+              <div class="w3-card" data-aos="flip-right">
                 <h3>La Tour Eiffel</h3>
                 <img
                   src="assets/images/architecture.jpg"
                   alt="tour eiffel"
                   class="w3-image w3-padding"
                 />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nihil harum odit voluptatum beatae voluptates ratione sunt
+                  eveniet incidunt rem sapiente.
+                </p>
               </div>
             </article>
             <article class="w3-col m4 w3-center">
-              <div class="w3-card">
+              <div class="w3-card" data-aos="flip-left">
                 <h3>Le musée du Louvre</h3>
                 <img
                   src="assets/images/louvre.jpg"
                   alt="louvre"
                   class="w3-image w3-padding"
                 />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nihil harum odit voluptatum beatae voluptates ratione sunt
+                  eveniet incidunt rem sapiente.
+                </p>
               </div>
             </article>
           </div>
@@ -247,48 +297,109 @@
           class="contact w3-display-container w3-border-bottom w3-border-top"
         >
           <h2
-            style="font-size: 70px"
-            class="w3-display-middle w3-center w3-padding w3-blue-grey w3-round-medium"
+            class="w3-display-middle w3-center w3-padding w3-text-white w3-round-xxlarge"
           >
             Contact
           </h2>
         </div>
-        <div class="w3-container w3-margin-top">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            repudiandae nostrum perspiciatis dolores laudantium architecto amet
-            voluptatibus blanditiis assumenda. Sint quidem porro autem facilis
-            at illum, similique assumenda nam laboriosam molestias, nihil sunt,
-            officiis explicabo. Doloremque architecto cum eligendi ullam velit
-            est perferendis iure dolores, saepe ea maxime eum quibusdam nihil
-            iusto. Neque culpa libero aut nam optio nobis esse eveniet odit.
-            Neque doloremque eos rerum animi facere deserunt natus ut sit
-            assumenda. Placeat similique cum, harum distinctio officiis
-            exercitationem a repudiandae? Nam quasi perspiciatis assumenda
-            quisquam alias reiciendis eos, asperiores dignissimos. Maxime
-            obcaecati placeat eius? Debitis laboriosam non alias omnis aperiam
-            necessitatibus. Assumenda molestiae corporis doloribus quos. Nobis,
-            non libero quisquam quaerat veritatis, exercitationem nemo suscipit,
-            quia recusandae sed aliquid laudantium dignissimos. Provident cum in
-            consequuntur itaque, voluptates excepturi. Voluptate quo officia
-            consectetur quisquam possimus enim recusandae facere. Iste libero
-            quae ipsum quod vitae, eos aspernatur voluptatem rem a eligendi,
-            ducimus minus deleniti ex corporis. Possimus officia autem, eos
-            recusandae nulla ab dolore, accusantium obcaecati sed nisi sit harum
-            cum fuga eveniet minima dolor, quibusdam consequuntur beatae alias
-            qui natus mollitia. Corrupti quia aspernatur blanditiis. Laboriosam
-            voluptate a voluptates numquam ab doloremque tempora aspernatur
-            optio velit id? Nostrum, corporis.
-          </p>
+        <div class="w3-container" data-aos="fade-up">
+          <h3>Formulaire de Contact</h3>
+
+          <form
+            style="width: 40%; margin: auto"
+            action="traitement.php"
+            method="POST"
+            class="w3-container w3-card-4 w3-light-grey"
+          >
+            <label for="nom">Nom :</label>
+            <input
+              class="w3-input"
+              type="text"
+              id="nom"
+              name="nom"
+              required
+            /><br /><br />
+
+            <label for="email">Email :</label>
+            <input
+              class="w3-input w3-border w3-round"
+              type="email"
+              id="email"
+              name="email"
+              required
+            /><br /><br />
+
+            <label for="telephone">Téléphone :</label>
+            <input
+              class="w3-input w3-border w3-round"
+              type="tel"
+              id="telephone"
+              name="telephone"
+              required
+            /><br /><br />
+
+            <label for="message">Message :</label>
+            <textarea
+              class="w3-input w3-border w3-round"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea
+            ><br /><br />
+
+            <input type="submit" value="Envoyer" class="w3-margin-bottom" />
+          </form>
         </div>
       </section>
       <!-- ABOUT SECTION END -->
     </main>
     <!-- MAIN END -->
     <!-- FOOTER START -->
-    <footer></footer>
+    <footer
+      class="w3-container w3-pale-yellow w3-margin-top w3-padding-24 w3-border"
+    >
+      <div class="reseaux-sociaux w3-half w3-center w3-padding">
+        <h3>Suivez-nous sur les réseaux sociaux :</h3>
+        <ul class="w3-ul w3-hoverable">
+          <li>
+            <a href="https://www.facebook.com/votrepage" target="_blank"
+              ><img src="assets/images/facebook.png" alt="facebook"
+            />FACEBOOK</a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/votrepage" target="_blank"
+              ><img src="assets/images/twitter.png" alt="twitter"
+            />TWITTER</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/votrepage" target="_blank"
+              ><img src="assets/images/instagram.png" alt="instagram"
+            />INSTAGRAM</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mention-legale w3-half w3-center  w3-padding">
+        <h3>Mentions légales :</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Reprehenderit, molestiae officia cumque delectus consectetur totam
+          quaerat rem reiciendis atque! Voluptate impedit eum nihil totam iusto
+          asperiores, repellat ab, reprehenderit culpa officia et ipsam illo.
+          
+        </p>
+        <p>Pour voir les mentions légales, <a href="#" class="w3-black">cliquez ici</a></p>
+      </div>
+    </footer>
     <!-- FOOTER END -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+      AOS.init();
+
       function toggleNavbar() {
         let nav = document.getElementById("mobileNav");
         nav.classList.toggle("w3-show");
