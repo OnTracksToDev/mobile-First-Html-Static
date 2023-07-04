@@ -41,9 +41,9 @@
       }
       #home {
         height: 350px;
-        background-image: url(assets/images/paris-ville.jpg);
+        background-image: url(assets/images/eiffel-tower-.jpg);
         background-size: cover;
-        background-position: center center;
+        background-position-y: bottom;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
@@ -52,12 +52,12 @@
         text-align: center;
       }
       .portfolio {
-        background-position: center center;
+        background-position-y: 0px;
 
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(assets/images/street-art.jpg);
+        background-image: url(assets/images/museum.jpg);
         height: 350px;
       }
       .contact {
@@ -65,7 +65,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(assets/images/tag.jpg);
+        background-image: url(assets/images/vintage.jpg);
         height: 350px;
       }
       h1,
@@ -98,50 +98,50 @@
       }
     </style>
   </head>
-  <body>
+  <body class="w3-blue-gray">
     <!-- HEADER START -->
-    <header class="w3-top w3-white">
-      <nav id="desktopNav" class="w3-bar w3-border-bottom">
+    <header class="w3-top w3-light-blue">
+      <nav id="desktopNav" class="w3-bar w3-border-bottom ">
         <a
           href="javascript:void(0)"
           onclick="toggleNavbar()"
-          class="w3-bar-item w3-hide-large w3-hide-medium w3-right"
+          class="w3-bar-item w3-hide-large w3-hide-medium w3-right "
         >
           <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button"
+        <a href="#home" onclick="homeHideNavbar()" class="w3-bar-item w3-button w3-hover-pale-blue"
           ><img src="assets/images/effeiltower.svg" alt="" style="width: 30px"
         /></a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-xlarge"
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-xlarge w3-hover-pale-blue"
           >About</a
         >
         <a
           href="#portfolio"
-          class="w3-bar-item w3-button w3-hide-small w3-xlarge"
+          class="w3-bar-item w3-button w3-hide-small w3-xlarge w3-hover-pale-blue"
           >Portfolio</a
         >
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-xlarge"
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-xlarge w3-hover-pale-blue"
           >Contact</a
         >
       </nav>
 
       <nav
         id="mobileNav"
-        class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide w3-animate-right"
+        class="w3-bar-block w3-light-blue w3-hide-large w3-hide-medium w3-hide w3-animate-right"
       >
-        <a href="#about" onclick="toggleNavbar()" class="w3-bar-item w3-button"
+        <a href="#about" onclick="toggleNavbar()" class="w3-bar-item w3-button w3-hover-pale-blue"
           >About</a
         >
         <a
           href="#portfolio"
           onclick="toggleNavbar()"
-          class="w3-bar-item w3-button"
+          class="w3-bar-item w3-button w3-hover-pale-blue"
           >Portfolio</a
         >
         <a
           href="#contact"
           onclick="toggleNavbar()"
-          class="w3-bar-item w3-button"
+          class="w3-bar-item w3-button w3-hover-pale-blue"
           >Contact</a
         >
       </nav>
@@ -150,13 +150,13 @@
     <!-- HOME SECTION START -->
     <section id="home" class="w3-display-container w3-border-bottom">
       <h1
-        class="w3-display-middle w3-text-white w3-center w3-padding w3-round-medium"
+        class="w3-display-middle w3-center w3-padding w3-round-medium w3-text-yellow"
       >
         My Mobile Website
       </h1>
     </section>
     <button id="btnToTop" class="w3-hide w3-black w3-animate-opacity">
-      <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
+      <a href="#"><i class="fa fa-chevron-circle-up w3-xxxlarge"></i></a>
     </button>
     <!-- HOME SECTION END -->
     <!-- MAIN START -->
@@ -165,15 +165,16 @@
       <section id="about" class="w3-container w3-section">
         <h2>About</h2>
         <div class="w3-row">
-          <div class="w3-half w3-card w3-center w3-round-xlarge">
+          <div class="w3-half w3-card w3-center w3-round-xlarge" data-aos="fade-right">
             <h3>PARIS BY NIGHT</h3>
             <img
               src="assets/images/paris.jpg"
               alt="parisByNight"
-              class="w3-image w3-padding"
+              class="w3-image w3-padding "
+              width="600px"
             />
           </div>
-          <div class="w3-half w3-padding">
+          <div class="w3-half w3-padding" data-aos="fade-left">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit perferendis dolor illo perspiciatis, rerum ducimus
@@ -218,13 +219,15 @@
         <div class="w3-container w3-margin-top">
           <div class="w3-row-padding">
             <article class="w3-col m4 w3-center">
-              <div class="w3-card" data-aos="flip-left">
+              <div class="w3-card w3-light-blue w3-hover-pale-blue" data-aos="flip-left">
                 <h3>L'Arc de Triomphe</h3>
+                <a href="https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l%27%C3%89toile">
                 <img
                   src="assets/images/arc-de-triomph.jpg"
                   alt="arc de triomphe"
-                  class="w3-image w3-padding"
-                />
+                  class="w3-image w3-padding w3-hover-sepia"
+                  />
+                </a>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nihil harum odit voluptatum beatae voluptates ratione sunt
@@ -233,13 +236,15 @@
               </div>
             </article>
             <article class="w3-col m4 w3-center">
-              <div class="w3-card" data-aos="flip-right">
+              <div class="w3-card w3-light-blue w3-hover-pale-blue" data-aos="flip-right">
                 <h3>La Tour Eiffel</h3>
+                <a href="https://fr.wikipedia.org/wiki/Tour_Eiffel">
                 <img
                   src="assets/images/architecture.jpg"
                   alt="tour eiffel"
-                  class="w3-image w3-padding"
+                  class="w3-image w3-padding w3-hover-sepia"
                 />
+              </a>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nihil harum odit voluptatum beatae voluptates ratione sunt
@@ -248,13 +253,15 @@
               </div>
             </article>
             <article class="w3-col m4 w3-center">
-              <div class="w3-card" data-aos="flip-left">
+              <div class="w3-card w3-light-blue w3-hover-pale-blue" data-aos="flip-left">
                 <h3>Le musée du Louvre</h3>
+                <a href="https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre">
                 <img
                   src="assets/images/louvre.jpg"
                   alt="louvre"
-                  class="w3-image w3-padding"
+                  class="w3-image w3-padding w3-hover-sepia"
                 />
+              </a>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Nihil harum odit voluptatum beatae voluptates ratione sunt
@@ -263,7 +270,7 @@
               </div>
             </article>
           </div>
-          <p class="w3-margin-top">
+          <p class="w3-margin-top" data-aos="flip-down">
             hello world Lorem ipsum dolor, sit amet consectetur adipisicing
             elit. Unde ipsum, fuga harum rerum aut accusamus praesentium.
             Accusamus, fugiat doloribus veniam nostrum mollitia atque
@@ -306,10 +313,10 @@
           <h3>Formulaire de Contact</h3>
 
           <form
-            style="width: 40%; margin: auto"
+            style="width: 50%; margin: auto"
             action="traitement.php"
             method="POST"
-            class="w3-container w3-card-4 w3-light-grey"
+            class="w3-container w3-card-4 w3-light-blue"
           >
             <label for="nom">Nom :</label>
             <input
@@ -357,22 +364,22 @@
     <!-- MAIN END -->
     <!-- FOOTER START -->
     <footer
-      class="w3-container w3-pale-yellow w3-margin-top w3-padding-24 w3-border"
+      class="w3-container w3-light-blue w3-margin-top w3-padding-24 w3-border"
     >
       <div class="reseaux-sociaux w3-half w3-center w3-padding">
         <h3>Suivez-nous sur les réseaux sociaux :</h3>
         <ul class="w3-ul w3-hoverable">
-          <li>
+          <li class="w3-hover-pale-blue">
             <a href="https://www.facebook.com/votrepage" target="_blank"
               ><img src="assets/images/facebook.png" alt="facebook"
             />FACEBOOK</a>
           </li>
-          <li>
+          <li class="w3-hover-pale-blue">
             <a href="https://www.twitter.com/votrepage" target="_blank"
               ><img src="assets/images/twitter.png" alt="twitter"
             />TWITTER</a>
           </li>
-          <li>
+          <li class="w3-hover-pale-blue">
             <a href="https://www.instagram.com/votrepage" target="_blank"
               ><img src="assets/images/instagram.png" alt="instagram"
             />INSTAGRAM</a>
